@@ -1,13 +1,13 @@
 export const navigation = [
     {
       id: "0",
-      title: "Home",
-      url: "/",
+      title: "About me",
+      url: "/about",
     },
     {
       id: "1",
-      title: "About",
-      url: "/about",
+      title: "Skills",
+      url: "/skills",
     },
     {
       id: "2",
@@ -16,7 +16,7 @@ export const navigation = [
     },
     {
       id: "3",
-      title: "Contact",
+      title: "Contact me",
       url: "/contact",
     },
   ];
