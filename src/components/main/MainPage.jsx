@@ -17,12 +17,11 @@ const MainPage = () => {
     <>
         <Navbar />
         <motion.div 
-        className="fixed top-0 left-0 w-[1px] h-screen bg-yellow-500 origin-top"
-        style={{ scaleY }} // Bind the scaleY animation to the bar's height
+        className="fixed top-0 left-0 w-[1px] h-screen bg-[#1DB954] origin-top"
+        style={{ scaleY }} 
       />
       {/*import main landing page components*/}
         <Hero />
-        <h1 className="flex justify-center items-center text-9xl h-screen">test</h1>
         <Footer />
     </>
   )
