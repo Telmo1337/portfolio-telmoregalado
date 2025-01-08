@@ -6,16 +6,11 @@ export const navigation = [
     },
     {
       id: "1",
-      title: "Skills",
-      url: "/skills",
-    },
-    {
-      id: "2",
       title: "Projects",
       url: "/projects",
     },
     {
-      id: "3",
+      id: "2",
       title: "Contact me",
       url: "/contact",
     },
