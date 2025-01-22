@@ -12,6 +12,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    
+}
 
 body {
     font-family: "DM Sans", serif;
@@ -20,4 +25,5 @@ body {
     color: #2B2826;
     
 }
+
 

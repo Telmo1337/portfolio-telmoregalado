@@ -5,7 +5,7 @@ const Loader = () => {
   return (
     <StyledWrapper>
       <div>
-        <div className="text-sm font-extralight text-[#918D8D] flex text-end h-8">
+        <div className="text-sm font-extralight text-[#918D8D] hidden lg:flex text-end h-8">
           <div className="overflow-hidden relative">
             <span className="word">&#91; Have &#93;</span>
             <span className="word">&#91; You &#93;</span>
