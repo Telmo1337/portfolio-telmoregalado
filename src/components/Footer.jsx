@@ -22,15 +22,15 @@ const Footer = () => {
                     start: "top 70%",
                     end: "bottom 50%",
                     scrub: 1,
-                    
+
                 }
             });
         }
     }, []);
 
     return (
-        <footer  className="flex flex-col justify-between h-screen bg-[#2B2826] text-[#F5F5F5] relative">
-            <div ref={footerRef} className="flex flex-col items-start justify-center w-full mx-20 pb-20 pt-52 space-y-10"> {/* Increased padding-bottom */}
+        <footer className="flex flex-col justify-between h-screen bg-[#2B2826] text-[#F5F5F5] relative mt-64" id="contact">
+            <div ref={footerRef} className="flex flex-col items-start justify-center w-full mx-20 pb-20 pt-52 space-y-10">
                 <p className="text-2xl font-light">
                     Thank you for visiting my portfolio. <br />
                     I hope you liked it!
@@ -51,10 +51,10 @@ const Footer = () => {
                     <p className="text-lg font-light">
                         You can also find me on:
                     </p>
-                    <a href="#" target="_blank" rel="noreferrer" className="text-lg font-semibold underline">
+                    <a href="#" target="_blank" rel="noreferrer" className="text-lg font-light underline">
                         LinkedIn
                     </a>
-                    <a href="#" className="text-lg font-light underline ml-2">
+                    <a href="https://github.com/Telmo1337" target='_blank' className="text-lg font-light underline ml-2">
                         GitHub
                     </a>
                 </div>
@@ -64,9 +64,12 @@ const Footer = () => {
             <div className="flex justify-between items-center w-full absolute bottom-0 left-0 px-4 py-2">
                 {/* Made with love */}
                 <p className="text-lg font-light">
-                    Made with <span className="text-[#F5F5F5] text-2xl">&hearts;</span> by Telmo 
+                    Made with <span className="text-[#F5F5F5] text-2xl">&hearts;</span> by Telmo
                 </p>
-
+                <p className="text-[10px] font-light">
+                    Font used: Absans, Copyright © 2023, Collletttivo. Licensed under the
+                    <a href="https://scripts.sil.org/OFL" target="_blank" className='ml-1 underline  transition-colors duration-300 ease-in-out hover:text-[#918D8D] '>SIL Open Font License, Version 1.1</a>.
+                </p>
                 {/* Go back to top */}
                 <a href="#" className="text-lg font-medium underline">
                     Go back to top

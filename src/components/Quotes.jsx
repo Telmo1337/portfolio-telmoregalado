@@ -44,7 +44,7 @@ const Quotes = () => {
     return (
         <div>
             {quotes.length > 0 ? (
-                <div className={`lg:text-lg text-xs font-light text-[#918D8D] max-w-[280px] md:max-w-[310px] transition-opacity duration-1000 ${fade ? 'opacity-100' : 'opacity-0'}`}>
+                <div className={`flex flex-col text-center lg:text-lg text-xs font-light text-[#918D8D] max-w-[320px] md:max-w-[350px] transition-opacity duration-1000 ${fade ? 'opacity-100' : 'opacity-0'}`}>
                     <h2>{quotes[currentQuoteIndex].frase}</h2>
                     <h3 className="lg:text-lg text-xs font-medium">- {quotes[currentQuoteIndex].autor}</h3>
                 </div>

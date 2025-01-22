@@ -7,7 +7,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        custom: ["CLTAbsans", "sans-serif"], // Adiciona a tua fonte
+      },
+    },
   },
   plugins: [
     tailwindHamburgers, 

@@ -1,7 +1,7 @@
 import Loader from "./Loader";
 
 import { BsArrow90DegLeft } from "react-icons/bs";
-import Quotes from "./Quotes";
+
 
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
@@ -39,7 +39,7 @@ const Hero = () => {
                         An aspiring front-end Developer and UI/UX Designer
                     </h1>
                     <p className="lg:text-2xl font-light mt-4 text-xs sm:text-lg text-[#2B2826]">
-                        Web and Multimedia Development Student at IPVC ESTG. <br />
+                        Web and Multimedia Development Student at IPVC-ESTG. <br />
                         Passionate about learning new technologies and building projects.
                     </p>
                     <p className="text-sm font-light mt-4 text-[#918D8D]">
@@ -47,7 +47,7 @@ const Hero = () => {
                     </p>
                     <div className="mt-10 flex flex-row gap-4 items-center ">
                         <a
-                            href="#"
+                            href="#contact"
                             className="lg:text-lg text-sm font-normal flex items-end px-4 py-2 lg:px-6 lg:py-4 rounded-full bg-[#2B2826] text-[#F5F5F5] shadow-lg blur-[0.6px]
                             transition-all duration-300 ease-out  hover:-translate-y-2 hover:blur-[0px]"
                         >
@@ -63,9 +63,7 @@ const Hero = () => {
                         
                     </h1>
                     <Loader />
-                    <div className="text-end absolute bottom-0 right-0">
-                        <Quotes />
-                    </div>
+                    
                 </div>
             </div>
         </div>

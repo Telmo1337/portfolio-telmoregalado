@@ -27,21 +27,24 @@ const Projects = () => {
                         ease: "power1.inOut",
                         scrollTrigger: {
                             trigger: card,
-                            start: "top 80%", // Adjust as needed for the animation trigger
-                            end: "center 70%",
-                            toggleActions: "play none none reverse", // Plays on scroll down, reverses on scroll up
-                          
+                            start: "top 70%", 
+                            end: "bottom 30%",
+                            toggleActions: "play none none reverse",
+                            
+                            
                         },
                     }
                 );
+
+                
             });
         }
     }, []);
 
     return (
         <>
-            <hr className="w-10/12 mx-auto mb-20 " />
-            <div ref={projectsContainerRef} className="flex flex-col justify-center items-center w-full">
+            <hr className="w-10/12 mx-auto mb-20 mt-20 " />
+            <div ref={projectsContainerRef} className="flex flex-col justify-center items-center w-full" id="projects">
                 <h1 className="text-6xl sm:text-9xl max-w-4xl text-center font-medium">Projects</h1>
                 <div className="flex flex-col md:flex-row justify-center items-center md:items-baseline space-y-4 md:space-y-0 md:space-x-28 mx-6 px-8 sm:px-20 py-8 bg-[#2B2826] rounded-3xl shadow-lg mt-10">
                     <p className="text-center text-sm sm:text-lg md:text-xl font-medium text-[#F5F5F5] ">
@@ -55,7 +58,7 @@ const Projects = () => {
                     </a>
                 </div>
 
-                <hr className="w-10/12 mx-auto mt-20" />
+                <hr className="w-10/12 mx-auto mt-20 mb-10 " />
                 {/* Projects */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-5 w-full px-10 my-10">
                     {projects.map((project) => (
