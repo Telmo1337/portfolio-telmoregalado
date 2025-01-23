@@ -94,8 +94,8 @@ const Projects = () => {
 
                             {/* Actions */}
                             <div className="flex flex-row justify-between items-center w-full">
-                                <a
-                                    href="#"
+                                <a  target="_blank"
+                                    href={project.url}
                                     className="relative text-xl font-medium text-[#2B2826] transition-all duration-300 cursor-pointer group"
                                 >
                                     View project
@@ -104,7 +104,8 @@ const Projects = () => {
                                     {/* Hover Black Underline */}
                                     <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#B2ACA9] transition-all duration-300 group-hover:w-full"></span>
                                 </a>
-                                <a href="#">
+                                <a  target="_blank"
+                                    href={project.url}>
                                     <MdOutlineArrowForward className="text-3xl text-[#2B2826] cursor-pointer" />
                                 </a>
                             </div>

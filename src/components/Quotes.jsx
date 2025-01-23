@@ -38,7 +38,7 @@ const Quotes = () => {
     }, [quotes]);
 
     if (loading) {
-        return <p>Carregando citações...</p>;
+        return <p>Loading...</p>;
     }
 
     return (
@@ -49,7 +49,7 @@ const Quotes = () => {
                     <h3 className="lg:text-lg text-xs font-medium">- {quotes[currentQuoteIndex].autor}</h3>
                 </div>
             ) : (
-                <p>Nenhuma citação disponível.</p>
+                <p>...first deploy your nodefastify api...</p>
             )}
         </div>
     );
