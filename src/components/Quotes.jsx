@@ -2,12 +2,12 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const Quotes = () => {
-    const [quotes, setQuotes] = useState([]); // Armazena todas as citações
-    const [loading, setLoading] = useState(true); // Estado de carregamento
-    const [fade, setFade] = useState(true); // Controla o efeito de fade
-    const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0); // Armazena o índice atual
+    const [quotes, setQuotes] = useState([]); 
+    const [loading, setLoading] = useState(true); 
+    const [fade, setFade] = useState(true); 
+    const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0); 
 
-    // Fetch das citações ao montar o componente
+    
     useEffect(() => {
         axios.get('http://localhost:3333/quotes')
             .then(response => {
@@ -24,16 +24,16 @@ const Quotes = () => {
     useEffect(() => {
         if (quotes.length > 0) {
             const interval = setInterval(() => {
-                setFade(false); // Inicia o fade-out
+                setFade(false); 
                 setTimeout(() => {
                     setCurrentQuoteIndex((prevIndex) => 
-                        (prevIndex + 1) % quotes.length // Avança para a próxima citação
+                        (prevIndex + 1) % quotes.length 
                     );
-                    setFade(true); // Ativa o fade-in
-                }, 500); // Espera o fade-out antes de trocar a citação
-            }, 3000); // Muda de citação a cada 3 segundos
+                    setFade(true); 
+                }, 500); 
+            }, 3000); 
 
-            return () => clearInterval(interval); // Limpa o intervalo ao desmontar o componente
+            return () => clearInterval(interval); 
         }
     }, [quotes]);
 

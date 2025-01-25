@@ -11,7 +11,7 @@ const GsapBoxes = () => {
 
   useGSAP(
     () => {
-      // get all the boxes in the scrollRef
+      
       const boxes = gsap.utils.toArray(scrollRef.current.children);
 
       boxes.forEach((box) => {
@@ -22,9 +22,9 @@ const GsapBoxes = () => {
           scale: 0.8,
           scrollTrigger: {
             trigger: box,
-            start: "bottom bottom", // when the bottom of the box hits the bottom of the viewport
-            end: "top top", // end when the top of the box hits 20% from the top of the viewport
-            scrub: true, // scrubbing makes the animation smooth
+            start: "bottom bottom", 
+            end: "top top", 
+            scrub: true, 
           },
           ease: "power1.inOut",
         });
@@ -36,11 +36,11 @@ const GsapBoxes = () => {
     <div className="w-full -z-10" ref={scrollRef}>
     <div
         id="scroll-pink"
-        className="scroll-box w-32 h-32 rounded-lg bg-[#2b2826b0]"
+        className="scroll-box w-14 h-14 md:w-32 md:h-32 rounded-lg bg-[#2b2826b0]"
     />
     <div
         id="scroll-orange"
-        className="scroll-box w-32 h-32 rounded-lg bg-[#2b2826ce]"
+        className="scroll-box w-14 h-14 md:w-32 md:h-32 rounded-lg bg-[#2b2826ce]"
     />
 </div>
   )

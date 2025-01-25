@@ -59,25 +59,25 @@ const Projects = () => {
                 </div>
 
                 <hr className="w-10/12 mx-auto mt-20 mb-10 " />
-                {/* Projects */}
+                
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-5 w-full px-10 my-10">
                     {projects.map((project) => (
                         <div
                             key={project.id}
                             className="project-card flex flex-col items-center justify-between gap-6 rounded-3xl p-6 shadow-[#2b28263a] shadow-lg text-[#2B2826] xl:h-[385px] bg-white"
                         >
-                            {/* Title and Status */}
+                            
                             <div className="flex flex-col items-start justify-between w-full border-b-2 border-[#EBEAEA] pb-4">
                                 <h1 className="text-2xl text-start font-semibold underline">{project.title}</h1>
                                 <p className="text-[12px] font-semibold text-[#918D8D]">Finished</p>
                             </div>
 
-                            {/* Description */}
+                            
                             <p className="flex-grow text-start text-md font-medium overflow-hidden">
                                 {project.description}
                             </p>
 
-                            {/* Technologies Used */}
+                           
                             <div className="flex justify-between items-center w-full border-y-2 border-[#EBEAEA] py-4">
                                 <p className="text-md font-semibold text-start">Technologies used:</p>
                                 <div className="flex flex-wrap justify-end gap-1">
@@ -92,16 +92,16 @@ const Projects = () => {
                                 </div>
                             </div>
 
-                            {/* Actions */}
+                        
                             <div className="flex flex-row justify-between items-center w-full">
                                 <a  target="_blank"
                                     href={project.url}
                                     className="relative text-xl font-medium text-[#2B2826] transition-all duration-300 cursor-pointer group"
                                 >
                                     View project
-                                    {/* Static Gray Underline */}
+                                  
                                     <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#2B2826]"></span>
-                                    {/* Hover Black Underline */}
+                                    
                                     <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#B2ACA9] transition-all duration-300 group-hover:w-full"></span>
                                 </a>
                                 <a  target="_blank"
